@@ -101,10 +101,7 @@
 				B37AEC971F79EF200069CAE9 /* Classes */,
 				B37AEC991F79EF660069CAE9 /* StoryBoard */,
 				B37AEC691F79EE8A0069CAE9 /* AppDelegate.swift */,
-				B37AEC6B1F79EE8A0069CAE9 /* ViewController.swift */,
-				B37AEC6D1F79EE8A0069CAE9 /* Main.storyboard */,
 				B37AEC701F79EE8A0069CAE9 /* Assets.xcassets */,
-				B37AEC721F79EE8A0069CAE9 /* LaunchScreen.storyboard */,
 				B37AEC751F79EE8A0069CAE9 /* Info.plist */,
 			);
 			path = bbh;
@@ -131,6 +128,7 @@
 		B37AEC971F79EF200069CAE9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B37AEC9A1F7A20FF0069CAE9 /* Main */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -145,8 +143,42 @@
 		B37AEC991F79EF660069CAE9 /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
+				B37AEC721F79EE8A0069CAE9 /* LaunchScreen.storyboard */,
+				B37AEC6D1F79EE8A0069CAE9 /* Main.storyboard */,
 			);
 			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		B37AEC9A1F7A20FF0069CAE9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B37AEC9D1F7A26880069CAE9 /* Views */,
+				B37AEC9C1F7A25060069CAE9 /* Models */,
+				B37AEC9B1F7A24880069CAE9 /* Controllers */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B37AEC9B1F7A24880069CAE9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B37AEC9C1F7A25060069CAE9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B37AEC9D1F7A26880069CAE9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B37AEC6B1F79EE8A0069CAE9 /* ViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,7 +489,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yzt.bbh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -472,7 +504,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yzt.bbh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
