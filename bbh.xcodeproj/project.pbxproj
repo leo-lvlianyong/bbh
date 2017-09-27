@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3118E241F7B8D7E00031B43 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3118E231F7B8D7E00031B43 /* MainTabViewController.swift */; };
 		B37AEC6A1F79EE8A0069CAE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37AEC691F79EE8A0069CAE9 /* AppDelegate.swift */; };
 		B37AEC6C1F79EE8A0069CAE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37AEC6B1F79EE8A0069CAE9 /* ViewController.swift */; };
 		B37AEC6F1F79EE8A0069CAE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37AEC6D1F79EE8A0069CAE9 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		B37AEC741F79EE8A0069CAE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37AEC721F79EE8A0069CAE9 /* LaunchScreen.storyboard */; };
 		B37AEC7F1F79EE8A0069CAE9 /* bbhTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37AEC7E1F79EE8A0069CAE9 /* bbhTests.swift */; };
 		B37AEC8A1F79EE8A0069CAE9 /* bbhUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37AEC891F79EE8A0069CAE9 /* bbhUITests.swift */; };
+		B3A81A4D1F7BA0B300DC7A66 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A81A4C1F7BA0B300DC7A66 /* HomeViewController.swift */; };
+		B3A81A4F1F7BA17100DC7A66 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A81A4E1F7BA17100DC7A66 /* MineViewController.swift */; };
 		F94EA213C833E4D72CB70434 /* Pods_bbh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B660A6C0D3BB77C21874F0CB /* Pods_bbh.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		1DF74F2D80355E30E6FFB5AC /* Pods-bbh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bbh.release.xcconfig"; path = "Pods/Target Support Files/Pods-bbh/Pods-bbh.release.xcconfig"; sourceTree = "<group>"; };
+		B3118E231F7B8D7E00031B43 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		B37AEC661F79EE8A0069CAE9 /* bbh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bbh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37AEC691F79EE8A0069CAE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B37AEC6B1F79EE8A0069CAE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		B37AEC851F79EE8A0069CAE9 /* bbhUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bbhUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37AEC891F79EE8A0069CAE9 /* bbhUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bbhUITests.swift; sourceTree = "<group>"; };
 		B37AEC8B1F79EE8A0069CAE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3A81A4C1F7BA0B300DC7A66 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B3A81A4E1F7BA17100DC7A66 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		B660A6C0D3BB77C21874F0CB /* Pods_bbh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bbh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6F6153CA5E297E45D22582 /* Pods-bbh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bbh.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bbh/Pods-bbh.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -186,6 +192,10 @@
 		B37AEC9B1F7A24880069CAE9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B37AEC6B1F79EE8A0069CAE9 /* ViewController.swift */,
+				B3118E231F7B8D7E00031B43 /* MainTabViewController.swift */,
+				B3A81A4C1F7BA0B300DC7A66 /* HomeViewController.swift */,
+				B3A81A4E1F7BA17100DC7A66 /* MineViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -200,7 +210,6 @@
 		B37AEC9D1F7A26880069CAE9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B37AEC6B1F79EE8A0069CAE9 /* ViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -378,12 +387,20 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-bbh/Pods-bbh-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaSecurity/CocoaSecurity.framework",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaSecurity.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +417,9 @@
 			files = (
 				B37AEC6C1F79EE8A0069CAE9 /* ViewController.swift in Sources */,
 				B37AEC6A1F79EE8A0069CAE9 /* AppDelegate.swift in Sources */,
+				B3A81A4D1F7BA0B300DC7A66 /* HomeViewController.swift in Sources */,
+				B3118E241F7B8D7E00031B43 /* MainTabViewController.swift in Sources */,
+				B3A81A4F1F7BA17100DC7A66 /* MineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

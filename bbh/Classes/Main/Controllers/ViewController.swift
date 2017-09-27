@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         getHTTPJsonData()
     }
     
+    //
     func getHTTPJsonData(){
         let url = URL(string: "http://www.chepintou.cn:3541/car.wap/test/getJsonData")
         Alamofire.request(url!).validate().responseJSON { response in
@@ -24,12 +25,15 @@ class ViewController: UIViewController {
                 case true:
                     if let value = response.result.value {
                         let json = JSON(value)
-                        if let code = json[0]["code"].string {
-                            print("code:\(code)")
+                        print(json)
+                        /*
+                        if let message = json[0]["message"].string {
+                            print("message:\(message)")
                         }
+                        */
                     }
                 case false:
-                    print(123)
+                    print(response.result.error!)
             }
         }
     }
