@@ -29,11 +29,12 @@ class MoreLoginViewController: AnimatableModalViewController, StoryboardLoadable
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupRx()
+        //setupRx()
     }
     
 }
 
+/*
 extension MoreLoginViewController {
     private func setupRx() {
         /// 验证用户输入是否有效
@@ -67,6 +68,7 @@ extension MoreLoginViewController {
             .disposed(by: disposBag)
     }
 }
+ */
 
 enum GithubApi {
     // 封装网络请求的方法

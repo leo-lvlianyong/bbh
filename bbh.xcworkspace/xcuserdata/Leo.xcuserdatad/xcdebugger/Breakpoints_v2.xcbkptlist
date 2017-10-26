@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "bbh/Classes/Mine/Controllers/MoreLoginViewController.swift"
-            timestampString = "529581433.268549"
+            timestampString = "530379964.831068"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "login(username:password:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "bbh/Classes/Mine/Controllers/MoreLoginViewController.swift"
-            timestampString = "529581433.268662"
+            timestampString = "530379964.833252"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "User"
             landmarkType = "14">
          </BreakpointContent>
