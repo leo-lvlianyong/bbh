@@ -9,17 +9,26 @@
 import UIKit
 
 class AdvertiseViewController: UIViewController {
-    // 延迟 2 秒
+    // 延迟 4 秒
     private var time: TimeInterval = 4.0
     
     private var countdownTimer: Timer?
     
-    @IBOutlet weak var timeButton: UIButton!
+    // @IBOutlet weak var timeButton: UIButton!
+    
+    var timeButton: UIButton!
+    
+    @IBOutlet weak var advertiseImage: UIImageView!
+  
+    var backgroundImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
         countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+        showButton()
+        showBackground()
+        // showImage()
     }
     
     @objc func updateTime(){
@@ -57,3 +66,32 @@ extension AdvertiseViewController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "TabBarDidSelectedNotification"), object: nil)
     }}
+
+// MARK： - 显示图片
+extension AdvertiseViewController {
+    func showImage(){
+        let url = URL(string: "http://img.ivsky.com/img/tupian/pre/201509/13/tianzhukui.jpg")
+        let data = try? Data(contentsOf: url!)
+        if data != nil {
+            let image = UIImage(data: data!)
+            advertiseImage.image = image
+        }
+    }
+    
+    func showBackground(){
+        // backgroundImage = UIImageView(image:)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named:"LaunchImage")!)
+        // self.view.addSubview(backgroundImage)
+    }
+    
+    func showButton(){
+        //创建一个ContactAdd类型的按钮
+        timeButton = UIButton(type:.custom)
+        //设置按钮位置和大小
+        timeButton.frame = CGRect(x:10, y:150, width:100, height:30)
+        //设置按钮文字
+        timeButton.setTitle("2s 跳过", for:.normal)
+        timeButton.backgroundColor = UIColor.gray
+        self.view.addSubview(timeButton)
+    }
+}

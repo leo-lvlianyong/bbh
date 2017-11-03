@@ -30,6 +30,15 @@
 		<true/>
 		<key>NSExceptionDomains</key>
 		<dict>
+			<key>img.ivsky.com</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSExceptionRequiresForwardSecrecy</key>
+				<false/>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
 			<key>chepintou.cn</key>
 			<dict>
 				<key>NSExceptionAllowsInsecureHTTPLoads</key>

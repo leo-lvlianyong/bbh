@@ -12,13 +12,13 @@ import IBAnimatable
 import RxSwift
 import RxCocoa
 
+let minUsernameLength = 5
+let maxUsernameLength = 10
+let minPasswordLength = 5
+let maxPasswordLength = 16
+let disposBag = DisposeBag()
+
 class MoreLoginViewController: AnimatableModalViewController, StoryboardLoadable {
-    
-    let minUsernameLength = 5
-    let maxUsernameLength = 10
-    let minPasswordLength = 5
-    let maxPasswordLength = 16
-    let disposBag = DisposeBag()
     
     @IBOutlet weak var phonenumberTF: UITextField!
     @IBOutlet weak var phonenumberLB: UILabel!
@@ -29,14 +29,27 @@ class MoreLoginViewController: AnimatableModalViewController, StoryboardLoadable
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //setupRx()
+        setupRx()
     }
     
 }
 
-/*
+
 extension MoreLoginViewController {
     private func setupRx() {
+        
+        showAlert()
+        
+        /// 验证用户输入是否有效
+        /*
+        let phonenumberValid: Observable = phonenumberTF.rx.text.orEmpty.map{
+            newphonenumber in newphonenumber.characters.count > 11
+        }
+        // phonenumberValid.bind(to: vcodeBtn.rx.isHidden).disposed(by: disposBag)
+        phonenumberValid.bind(to: vcodeBtn.rx.isEnabled).disposed(by: disposBag)
+        */
+        
+        /*
         /// 验证用户输入是否有效
         let phonenumberValid: Observable = phonenumberTF.rx.text.orEmpty.map{
                     newphonenumber in newphonenumber.characters.count > 5
@@ -65,10 +78,14 @@ extension MoreLoginViewController {
                 user == nil ? "登录失败，请稍后重试" : "(user!.nickname) 您已成功登录"
             }
             .bind(to: vcodeLB.rx.text)
-            .disposed(by: disposBag)
+            .disposed(by: disposBag) */
     }
 }
- */
+
+// 弹出提示
+func showAlert() {
+    UIAlertView(title: "成功", message: "登录成功", delegate: nil, cancelButtonTitle: "OK").show()
+}
 
 enum GithubApi {
     // 封装网络请求的方法

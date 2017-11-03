@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,9 +16,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wallpaper_profile_night" translatesAutoresizingMaskIntoConstraints="NO" id="gOB-Ed-ycn" userLabel="Bg Image View">
-                    <rect key="frame" x="0.0" y="-20" width="375" height="280"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper_profile_night" translatesAutoresizingMaskIntoConstraints="NO" id="gOB-Ed-ycn" userLabel="Bg Image View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="67Q-Bz-qUU">
                     <rect key="frame" x="0.0" y="0.0" width="66" height="66"/>
@@ -54,6 +53,11 @@
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="gOB-Ed-ycn" firstAttribute="trailing" secondItem="bcS-K0-szW" secondAttribute="trailing" id="N5y-np-ioP"/>
+                <constraint firstItem="gOB-Ed-ycn" firstAttribute="leading" secondItem="bcS-K0-szW" secondAttribute="leading" id="RnL-8q-mZu"/>
+                <constraint firstItem="gOB-Ed-ycn" firstAttribute="top" secondItem="mpH-t7-Jxg" secondAttribute="top" id="Umv-Be-F9s"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="bcS-K0-szW"/>
             <connections>

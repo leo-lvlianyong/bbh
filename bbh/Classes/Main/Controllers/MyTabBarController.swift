@@ -27,6 +27,9 @@ class MyTabBarController: UITabBarController {
      */
     private func addChildViewControllers() {
         addChildViewController(childController: HomeViewController(), title: "首页", imageName: "main_home", selectedImage: "main_home")
+        
+        addChildViewController(childController: HomeViewController(), title: "", imageName: "main_publish", selectedImage: "main_publish")
+        
         addChildViewController(childController: MineViewController(), title: "我的", imageName: "main_mine", selectedImage: "main_mine")
     }
     
